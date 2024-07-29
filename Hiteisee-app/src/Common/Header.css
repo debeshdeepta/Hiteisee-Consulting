@@ -1,11 +1,14 @@
-.header-logo {
+/* .header-logo {
     border: 5px solid red; /* Add a noticeable border */
-    width: 10%;
-}
+/*     width: 10%; */
+/* } */ 
 
-/* .top-logo{
-    display: flex;
-} */
+
+.header-logo img {
+    width: 15%; /* Make the image take up the full width of its parent */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-left: 5%;
+  }
 
 
 
