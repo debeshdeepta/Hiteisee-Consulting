@@ -1,0 +1,19 @@
+{
+  "name": "hiteisee-app",
+  "version": "1.0.0",
+  "main": "index.js",
+
+  "scripts": {
+  "start": "node index.js",
+  "dev": "command_to_start_dev_server"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "serve": "^14.2.3"
+  }
+}

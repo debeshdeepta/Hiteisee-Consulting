@@ -1,0 +1,42 @@
+.header-logo {
+    border: 5px solid red; /* Add a noticeable border */
+    width: 10%;
+}
+
+/* .top-logo{
+    display: flex;
+} */
+
+
+
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #9ACD32;
+    position: fixed;       /* Fixed position at the top */
+    /* top: 0; */
+    width: 100%;           /* Full width */
+    z-index: 1000;         /* Ensures it stays on top of other elements */
+}
+
+
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar-links li a:hover {
+    color: #ddd;
+}
+
