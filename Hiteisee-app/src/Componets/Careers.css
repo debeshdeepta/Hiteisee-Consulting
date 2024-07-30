@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.careers-container {
+    width: 100%;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+.page-heading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: black; /* Matching previous headers' color */
+}
+
+.careers-banner {
+    background: url('../assets/career2.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 20px; /* Increased height for more visual impact */
+    position: relative;
+    color: white;
+    margin-top: 20px; /* Space above the banner */
+}
+
+.careers-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+}
+
+.careers-heading, .careers-subheading {
+    position: relative;
+    z-index: 1;
+}
+
+.careers-heading {
+    font-size: 3em;
+    color: #ff9800; /* Orange theme color */
+    margin-bottom: 10px;
+}
+
+.careers-subheading {
+    font-size: 1.5em;
+    color: #44c948; /* Green theme color */
+    margin-top: 10px;
+}
+
+.careers-content {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-heading {
+    font-size: 2em;
+    color: #ff9800; /* Orange theme color */
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.positions {
+    margin-bottom: 40px;
+}
+
+.positions-heading {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.positions-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.application-form {
+    margin-top: 40px;
+}
+
+.form-heading {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group input[type="file"] {
+    padding: 0;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #44c948;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #36a935;
+}
