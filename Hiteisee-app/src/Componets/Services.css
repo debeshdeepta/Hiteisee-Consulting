@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.services-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-heading {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px; /* Limits the total width of the grid */
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: calc(25% - 30px); /* Four cards per row with spacing */
+    min-width: 250px;
+    padding: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #44c948;
+    font-size: 1.7em;
+    transition: color 0.3s ease;
+}
+
+.service-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.service-card li {
+    margin-bottom: 8px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background-color: #44c948;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover h3,
+.service-card:hover li {
+    color: white;
+}
+
+.read-more {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
