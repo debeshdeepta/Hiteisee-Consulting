@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Adding a light background color */
+}
+
+.home {
+    width: 90vw;
+    height: 90vh;
+    background-image: url("../assets/consilting1.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    padding: 20px; /* Add padding around the content */
+    border-radius: 15px; /* Rounded corners for a nicer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    animation: slideBg 10s infinite alternate; /* Animation property */
+}
+
+.heading-home {
+    margin-left: 20px;
+    color: white; /* White text for better contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+.welcome {
+    font-size: 3.5em; /* Adjust font size */
+    margin-bottom: 10px; /* Space between welcome and heading */
+}
+
+.text {
+    font-size: 4.5em; /* Adjust font size */
+}
+.hiteisee{
+    color:#44c948 ;
+    font-weight: 700;
+}
+.button {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px; /* Padding for button */
+    background-color: #44c948; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #e5533d; /* Darker shade on hover */
+}
+
+@keyframes slideBg {
+    0% {
+        background-image: url("../assets/consilting1.jpg");
+    }
+    50% {
+        background-image: url("../assets/consulting2.jpg");
+    }
+    100% {
+        background-image: url("../assets/consilting1.jpg");
+    }
+}
