@@ -1,10 +1,13 @@
 import React from 'react';
-import "../Componets/Footer.css";
+import "./Footer.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'; // Correct import
+import { faSquareXTwitter } from '@fortawesome/free-brands-svg-icons'; // Correct import
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Correct import
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'; // Correct import
 
 export const Footer = () => {
-
   return (
-    
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
@@ -47,14 +50,16 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright &copy;2024 All rights reserved Hiteisee Consulting  </p>
+        <p>Copyright &copy;2024 All rights reserved Hiteisee Consulting</p>
         <div className="social-icons">
-          <a href="#"><i className="fa fa-twitter"></i></a>
-          <a href="#"><i className="fa fa-facebook"></i></a>
-          <a href="#"><i className="fa fa-instagram"></i></a>
+          <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+          <a href="#"><FontAwesomeIcon icon={faSquareXTwitter} /></a>
+          <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+          <a href="#"><FontAwesomeIcon icon={faYoutube} /></a>
         </div>
       </div>
     </footer>
   );
 };
-  export default Footer;
+
+export default Footer;

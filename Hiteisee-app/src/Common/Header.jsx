@@ -1,9 +1,10 @@
 import React from "react";
 import "../Common/Header.css";
-
+import { Link } from "react-router-dom";
 
 export const Header = () => {
-  return (
+      
+    return (
     <div>
       <div className="top-logo">
         <div className="header-logo">
@@ -13,20 +14,20 @@ export const Header = () => {
         <header className="header">
           <nav className="navbar">
             <ul className="navbar-links">
-              <li>
-                <a href="#home">Home</a>
+              <li > 
+             <Link to="/">Home</Link>
+              </li>
+              <li >
+                <Link to="/about">About Us</Link> 
               </li>
               <li>
-                <a href="#about">About</a>
+              <Link to="/careers">Career</Link>
               </li>
               <li>
-                <a href="#career">Career</a>
+              <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </nav>

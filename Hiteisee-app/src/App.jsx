@@ -1,29 +1,31 @@
+import { useState } from 'react';
+import './App.css';
+import { Header } from './Common/Header';
+import Footer from './Common/Footer';
+import Home from './Componets/Home';
+import Services from './Componets/Services';
+import Customers from './Componets/Customers';
+import AboutUs from './Componets/AboutUs';
+import Careers from './Componets/Careers';
 
-import { useState } from 'react'
-import './App.css'
-import { Header } from './Common/Header'
-import { Footer } from './Componets/Footer'
-import Home from './Componets/Home'
-import Services from './Componets/Services'
-import Customers from './Componets/Customers'
-import AboutUs from './Componets/AboutUs'
-import Careers from './Componets/Careers'
-
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function App() {
-
   return (
-    <>
-      <Header/>
-        <Home/>
-        <Services/>
-        <Customers/>
-        <AboutUs/>
-        <Careers/>
-      <Footer/>
-        
-    </>
-  )
+    <Router>
+      <Header />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/customers" element={<Customers />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/careers" element={<Careers />} />
+      </Routes>
+
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;
