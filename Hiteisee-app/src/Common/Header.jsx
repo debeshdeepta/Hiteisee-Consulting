@@ -2,6 +2,7 @@ import React from "react";
 import "../Common/Header.css";
 import { Link } from "react-router-dom";
 
+
 export const Header = () => {
       
     return (
@@ -11,14 +12,17 @@ export const Header = () => {
           <img src="/HiteiseeLogo.png" alt="Logo" />
         </div>
 
+       
+
         <header className="header">
           <nav className="navbar">
             <ul className="navbar-links">
               <li > 
              <Link to="/">Home</Link>
               </li>
-              <li >
-                <Link to="/about">About Us</Link> 
+             
+              <li>
+              <Link to="/services">Services</Link>
               </li>
               <li>
               <Link to="/careers">Career</Link>
@@ -28,6 +32,9 @@ export const Header = () => {
               </li>
               <li>
               <Link to="/contact">Contact</Link>
+              </li>
+              <li >
+                <Link to="/about">About Us</Link> 
               </li>
             </ul>
           </nav>

@@ -18,11 +18,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #9ACD32;
+    background-color: #669E72;
     /* position: fixed;       Fixed position at the top */
     /* top: 0; */
     width: 100%;           /* Full width */
     z-index: 1000;         /* Ensures it stays on top of other elements */
+    
 }
 
 
@@ -31,6 +32,7 @@
     list-style: none;
     display: flex;
     gap: 15px;
+    margin-left: 5%;
 }
 
 .navbar-links li a {
