@@ -6,13 +6,12 @@ import { Link } from "react-router-dom";
 export const Header = () => {
       
     return (
+      
     <div>
       <div className="top-logo">
         <div className="header-logo">
           <img src="/HiteiseeLogo.png" alt="Logo" />
         </div>
-
-       
 
         <header className="header">
           <nav className="navbar">
