@@ -15,7 +15,35 @@
 .services-heading {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #333;
+    color: #000000;
+}
+
+.services-banner {
+    background: url('../assets/career2.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 20px; 
+    position: relative;
+    color: white;
+    /* margin-top: 20px;  */
+    width:-webkit-fill-available;
+    margin-bottom: 30px;
+}
+
+.services-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+}
+
+.careers-banner h2 {
+    position: relative;
+    z-index: 1; /* Ensure text is above the overlay */
+    font-size: 2em; /* Adjust font size for readability */
 }
 
 .card-grid {
@@ -80,4 +108,32 @@
 
 .read-more:hover {
     color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .careers-banner {
+        padding: 100px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .careers-banner h2 {
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+
+    .service-card {
+        width: calc(50% - 30px); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .careers-banner {
+        padding: 80px 5px; /* Further reduced padding for very small screens */
+    }
+
+    .careers-banner h2 {
+        font-size: 1.2em; /* Even smaller font size for very small screens */
+    }
+
+    .service-card {
+        width: calc(100% - 30px); /* One card per row on very small screens */
+    }
 }

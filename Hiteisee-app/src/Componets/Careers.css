@@ -42,31 +42,36 @@
     position: relative;
     z-index: 1;
 }
+.careers-subheading{
+    color: #fffdfd;
+}
 
 .careers-heading {
     font-size: 3em;
-    color: #ff9800; /* Orange theme color */
+    color: #000000; /* Orange theme color */
     margin-bottom: 10px;
 }
 
 .careers-subheading {
     font-size: 1.5em;
-    color: #44c948; /* Green theme color */
+    color: #44c948; 
     margin-top: 10px;
 }
 
 .careers-content {
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 10px;
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(223, 223, 226, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content-heading {
     font-size: 2em;
-    color: #ff9800; /* Orange theme color */
+    color: #ea9515; /* Orange theme color */
     margin-bottom: 20px;
 }
 
