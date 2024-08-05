@@ -5,6 +5,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'; // Correct impo
 import { faSquareXTwitter } from '@fortawesome/free-brands-svg-icons'; // Correct import
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Correct import
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'; // Correct import
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -36,11 +37,24 @@ export const Footer = () => {
         <div className="footer-section">
           <h4>Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
+          <li > 
+             <Link to="/">Home</Link>
+              </li>
+              <li>
+              <Link to="/services">Services</Link>
+              </li>
+              <li>
+              <Link to="/careers">Career</Link>
+              </li>
+              <li>
+              <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+              <Link to="/contact">Contact</Link>
+              </li>
+              <li >
+                <Link to="/about">About Us</Link> 
+              </li>
           </ul>
         </div>
         <div className="footer-section">

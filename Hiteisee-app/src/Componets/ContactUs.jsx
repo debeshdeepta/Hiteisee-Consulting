@@ -25,7 +25,9 @@ const ContactUs = () => {
     };
 
     return (
+        
         <div className="contact-us">
+            
             <h2>Contact Us</h2>
             <form onSubmit={handleSubmit}>
                 <label>
@@ -60,6 +62,7 @@ const ContactUs = () => {
                 <button type="submit">Submit</button>
             </form>
         </div>
+        
     );
 };
 
