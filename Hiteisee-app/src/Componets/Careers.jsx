@@ -25,9 +25,9 @@ const Careers = () => {
 
     return (
         <div className="careers-container">
-            <h1 className="page-heading">Career Page</h1>
+            {/* <h1 className="page-heading">Career Page</h1> */}
             <div className="careers-banner">
-                <h1 className="careers-heading">Join Our Team</h1>
+                <h1 className="careers-heading">Career</h1>
                 <p className="careers-subheading">Shape your future with us</p>
             </div>
 
