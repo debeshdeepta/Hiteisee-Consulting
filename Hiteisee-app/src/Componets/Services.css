@@ -15,7 +15,7 @@
 .services-box {
     background-color: #E9F4E3; 
     padding: 20px;
-    width: 80vw; 
+    width: 100vw; 
     height: 70vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-radius: 10px; 
@@ -91,7 +91,8 @@
 
 .service-card li {
     margin-bottom: 8px;
-    color: #555;
+    color: #6D6F89;
+
     transition: color 0.3s ease;
 }
 
@@ -101,9 +102,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Updated box-shadow */
 }
 
-.service-card:hover h3,
+.service-card:hover h3 {
+    color:#3C3E54;
+}
 .service-card:hover li {
-    color: white;
+    color: #6D6F89;
 }
 
 .read-more {
