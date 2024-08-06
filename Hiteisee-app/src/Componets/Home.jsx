@@ -3,6 +3,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import img from '../assets/partners.jpg';
 import Customers from './Customers';
+import stats from '../assets/stats.png';
 
 const Home = () => {
   const [completed, setCompleted] = useState(0);
@@ -131,10 +132,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-<br />
-      {/* Project Statistics Section */}
 
+        <div className="stat-img">
+        <img src={stats} alt="" />
+        </div>
+
+      {/* Project Statistics Section */}
+     
+      <div className="stat-container">
       <div className="project-stats-container">
       <h2 className='customers-heading'>Projects</h2>
 
@@ -151,6 +156,11 @@ const Home = () => {
           <p className="stat-label">Upcoming</p>
         </div>
       </div>
+      </div>
+
+      </div>
+
+
     </>
   );
 }

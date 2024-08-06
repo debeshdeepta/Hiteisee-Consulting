@@ -80,14 +80,20 @@ url("../assets/main-bgi2.png");
 }
 
 /* Project Stats Section Styles */
+.stat-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .project-stats-container {
+ 
     padding: 40px 20px;
     display: flex;
-    justify-content: space-around; /* Space between stats */
+    justify-content: space-around; 
     align-items: center;
-    width: 100vw; /* Full width */
-    box-sizing: border-box; /* Ensure padding is included in the width */
-    overflow: hidden; /* Prevent overflow */
+    width: 70vw; 
+    box-sizing: border-box; 
+    overflow: hidden;
     box-shadow: 0px 4px 22px 0px #4A4F6440;
     background: #FFFFFF;
 
@@ -178,3 +184,5 @@ url("../assets/main-bgi2.png");
         max-height: 60px; /* Further adjust logo size for very small screens */
     }
 }
+
+
