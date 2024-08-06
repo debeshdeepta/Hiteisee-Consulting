@@ -39,7 +39,7 @@ const Home = () => {
       <div className='container'>
         <div className="home">
           <div className="heading-home">
-            <p className='welcome'>Welcome to <span className='hiteisee'>Hiteisee</span></p>
+            <p className='welcome'>Welcome to <span className='hiteisee'>Hiteisee</span></p> 
             <h1 className='text'>
               <span className='unlock-text'>Unlock Your Business Potential</span> <br /> with our Expert Guidance
             </h1>
@@ -157,9 +157,10 @@ const Home = () => {
           <p className="stat-label">Upcoming</p>
         </div>
       </div>
+     
+      </div>
+      </div>
       <RequestQuote />
-      </div>
-      </div>
     </>
     
   );
