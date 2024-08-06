@@ -131,11 +131,16 @@ const Home = () => {
               <a href="#hr-shared-services" className="read-more">Read more...</a>
             </div>
           </div>
-        </div>
+          <br /><br /><br />
 
         <div className="stat-img">
         <img src={stats} alt="" />
         </div>
+
+          
+        </div> <br /><br /><br /><br />
+
+
 
       {/* Project Statistics Section */}
      

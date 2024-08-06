@@ -163,6 +163,9 @@ url("../assets/main-bgi2.png");
     margin: 0 20px; /* Adjust spacing between logos */
     flex-shrink: 0; /* Prevent logos from shrinking */
 }
+.stat-img{
+    width: 90%;
+}
 
 @keyframes scroll {
     0% {
