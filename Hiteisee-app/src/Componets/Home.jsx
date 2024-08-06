@@ -3,6 +3,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import img from '../assets/partners.jpg';
 import Customers from './Customers';
+import RequestQuote from './RequestQuote';
 
 const Home = () => {
   const [completed, setCompleted] = useState(0);
@@ -151,7 +152,9 @@ const Home = () => {
           <p className="stat-label">Upcoming</p>
         </div>
       </div>
+      <RequestQuote />
     </>
+    
   );
 }
 

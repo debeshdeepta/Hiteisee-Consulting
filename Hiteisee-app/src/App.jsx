@@ -8,6 +8,7 @@ import Customers from './Componets/Customers';
 import AboutUs from './Componets/AboutUs';
 import Careers from './Componets/Careers';
 import BlogPage from './Componets/BlogPage';
+import RequestQuote from './Componets/RequestQuote';
 
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
@@ -26,8 +27,8 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/Contact" element={<ContactUs />} />
+        <Route path="/Quote" element={ <RequestQuote />} />      
       </Routes>
-
       <Footer />
     </Router>
   );
