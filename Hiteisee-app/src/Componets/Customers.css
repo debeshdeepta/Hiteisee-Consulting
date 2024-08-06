@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -62,4 +62,74 @@
 .customer-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+} */
+
+
+.customers-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
+
+.customers-heading {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative; /* Ensure pseudo-element is positioned relative to this */
+}
+
+.customers-heading::after {
+    content: "";
+    display: block;
+    width: 50%; /* Adjust width as needed */
+    height: 4px; /* Height of the line */
+    background-color: #EF7F1A; /* Line color */
+    margin: 20px auto 0; /* Center the line and add spacing above */
+    border-radius: 2px; /* Rounded edges for the line */
+}
+
+.customers-grid {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+.partner-img {
+    max-height: 100px; /* Adjust height to fit your design */
+    margin: 0 20px; /* Adjust spacing between logos */
+    flex-shrink: 0; /* Prevent logos from shrinking */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-img {
+        max-height: 80px; /* Adjust logo size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-img {
+        max-height: 60px; /* Further adjust logo size for very small screens */
+    }
+}
+
