@@ -3,6 +3,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import img from '../assets/partners.jpg';
 import Customers from './Customers';
+import RequestQuote from './RequestQuote';
 import stats from '../assets/stats.png';
 
 const Home = () => {
@@ -38,7 +39,7 @@ const Home = () => {
       <div className='container'>
         <div className="home">
           <div className="heading-home">
-            <p className='welcome'>Welcome to <span className='hiteisee'>Hiteisee</span></p>
+            <p className='welcome'>Welcome to <span className='hiteisee'>Hiteisee</span></p> 
             <h1 className='text'>
               <span className='unlock-text'>Unlock Your Business Potential</span> <br /> with our Expert Guidance
             </h1>
@@ -131,11 +132,16 @@ const Home = () => {
               <a href="#hr-shared-services" className="read-more">Read more...</a>
             </div>
           </div>
-        </div>
+          <br /><br /><br />
 
         <div className="stat-img">
         <img src={stats} alt="" />
         </div>
+
+          
+        </div> <br /><br /><br /><br />
+
+
 
       {/* Project Statistics Section */}
      
@@ -156,12 +162,12 @@ const Home = () => {
           <p className="stat-label">Upcoming</p>
         </div>
       </div>
+     
       </div>
-
       </div>
-
-
+      <RequestQuote />
     </>
+    
   );
 }
 
